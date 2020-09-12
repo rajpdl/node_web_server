@@ -53,6 +53,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/contact', (req, res) => {
+    res.render('contact.hbs', {
+        title: 'Contact',
+        owner: 'Raj Pdl'
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
